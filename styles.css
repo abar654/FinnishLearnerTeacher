@@ -167,13 +167,13 @@ a {
 }
 
 .link-image {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  background-color: var(--color-dark-1);
 }
 
 .link-text {
   align-self: center;
   color: var(--color-line);
+  font-size: 24px;
 }
