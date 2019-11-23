@@ -259,6 +259,7 @@ a {
   .menu-bar {
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 10px;
   }
   .menu-button {
     margin-top: 10px;
@@ -270,7 +271,7 @@ a {
 }
 
 /* Min screen width for thinner view is 720px */
-@media (max-width: 720px) {
+@media only screen and (max-width: 720px) {
 
   .menu-bar {
     flex-direction: column;
