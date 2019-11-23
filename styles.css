@@ -21,7 +21,6 @@ a {
   display: flex;
   justify-content: space-between;
   background: var(--color-dark-1);
-  margin-bottom: 60px;
   white-space: nowrap;
   color: var(--color-light-1);
 }
@@ -68,6 +67,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 60px;
   margin-bottom: 40px;
 }
 
@@ -244,4 +244,84 @@ a {
   align-self: center;
   color: var(--color-line);
   font-size: 24px;
+}
+
+.footer {
+  background: var(--color-dark-1);
+  color: var(--color-light-1);
+  text-align: center;
+  font-size: 10px;
+}
+
+/* Min screen width for regular view is 1210px */
+@media (max-width: 1210px) {
+
+  .menu-bar {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .menu-button {
+    margin-top: 10px;
+  }
+  .large-title {
+    font-size: 30px;
+  }
+
+}
+
+/* Min screen width for thinner view is 720px */
+@media (max-width: 720px) {
+
+  .menu-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-bar-title {
+    display: none;
+  }
+
+  .menu-logo {
+    margin-top: 10px;
+  }
+
+  .menu-button-container {
+    flex-direction: column;
+    margin-bottom: 3vw;
+    margin-top: 3vw;
+  }
+
+  .menu-button {
+    width: 80vw;
+    padding: 5px;
+    margin-top: 2px;
+    margin-right: 0px;
+    border-radius: 5px;
+    background: var(--color-dark-2);
+    align-self: center;
+    text-align: center;
+  }
+
+  .large-logo-title-display {
+    margin-top: 10px;
+  }
+
+  .large-logo {
+    display: none;
+  }
+
+  .large-title {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+  }
+
+  .links-display {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-container {
+    margin-bottom: 30px;
+  }
+
 }
