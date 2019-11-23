@@ -21,7 +21,7 @@ a {
   display: flex;
   justify-content: space-between;
   background: var(--color-dark-1);
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   white-space: nowrap;
   color: var(--color-light-1);
 }
@@ -33,6 +33,12 @@ a {
 
 .menu-logo {
   width: 100px;
+  align-self: center;
+}
+
+#home-link {
+  display: inline-block;
+  line-height: 0;
 }
 
 .menu-bar-title {
@@ -62,7 +68,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .large-logo {
@@ -83,6 +89,21 @@ a {
   color: var(--color-line);
   font-size: 45px;
   font-family: 'Permanent Marker', cursive;
+  animation-name: finnish-anim;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes finnish-anim {
+  0% {
+    top: 55px;
+    left: -1000px;
+  }
+  100% {
+    top: 55px;
+    left: 10px;
+  }
+
 }
 
 .letter-l {
@@ -90,6 +111,27 @@ a {
   top: 0px;
   left: 210px;
   z-index: 2;
+  animation-name: l-anim;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes l-anim {
+  0% {
+    top: 0px;
+    left: 1100px;
+    visibility: hidden;
+  }
+  33% {
+    top: 0px;
+    left: 1100px;
+    visibility: hidden;
+  }
+  100% {
+    top: 0px;
+    left: 210px;
+    visibility: visible;
+  }
 }
 
 .l-vertical {
@@ -121,6 +163,27 @@ a {
 .letter-t {
   position: absolute;
   top: 110px;
+  animation-name: t-anim;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes t-anim {
+  0% {
+    top: 110px;
+    left: -1000px;
+    visibility: hidden;
+  }
+  50% {
+    top: 110px;
+    left: -1000px;
+    visibility: hidden;
+  }
+  100% {
+    top: 110px;
+    left: 0px;
+    visibility: visible;
+  }
 }
 
 .t-vertical {
@@ -164,6 +227,11 @@ a {
 .link-container {
   display: flex;
   flex-direction: column;
+  transition: all 250ms ease;
+}
+
+.link-container:hover {
+  transform: scale(1.2);
 }
 
 .link-image {
