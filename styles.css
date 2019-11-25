@@ -5,11 +5,12 @@
   --color-dark-2: #163172;
   --color-dark-2-hover: #264182;
   --color-line: #17233a;
+  font-family: 'Kalam', Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 body {
-  font-family: 'Kalam', Helvetica Neue,Helvetica,Arial,sans-serif;
   background:  var(--color-light-2);
+  color: var(--color-line);
 }
 
 a {
@@ -118,13 +119,13 @@ a {
 
 @keyframes l-anim {
   0% {
-    top: 0px;
-    left: 1100px;
+    top: -600px;
+    left: 210px;
     visibility: hidden;
   }
   33% {
-    top: 0px;
-    left: 1100px;
+    top: -600px;
+    left: 210px;
     visibility: hidden;
   }
   100% {
@@ -221,7 +222,7 @@ a {
 .links-display {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .link-container {
@@ -246,6 +247,53 @@ a {
   font-size: 24px;
 }
 
+/*Infopage CSS from here */
+
+.info-page-layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-section {
+  width: 720px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background:  var(--color-light-1);
+}
+
+.subpage-link-container {
+  display: flex;
+  margin: 10px;
+  color: var(--color-line);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: var(--color-dark-1);
+  transition: all 250ms ease;
+}
+
+.subpage-link-container:hover {
+  transform: scale(1.05);
+}
+
+.subpage-link-image {
+  width: 100px;
+  height: 100px;
+}
+
+.about-me-display {
+  background: var(--color-dark-1);
+  color: var(--color-light-1);
+  margin-bottom: 50px;
+}
+
+.about-me-image {
+  width: 300px;
+}
+
 .footer {
   background: var(--color-dark-1);
   color: var(--color-light-1);
@@ -266,24 +314,6 @@ a {
   }
   .large-title {
     font-size: 30px;
-  }
-
-  @keyframes l-anim {
-    0% {
-      top: -600px;
-      left: 210px;
-      visibility: hidden;
-    }
-    33% {
-      top: -600px;
-      left: 210px;
-      visibility: hidden;
-    }
-    100% {
-      top: 0px;
-      left: 210px;
-      visibility: visible;
-    }
   }
 
 }
