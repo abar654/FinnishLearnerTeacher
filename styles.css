@@ -26,6 +26,18 @@ a {
   text-decoration: underline;
 }
 
+h1 {
+  text-decoration: underline;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+h3 {
+  color: var(--color-dark-1);
+}
+
 /**-----------------------------------------------------------------
   * Header and nav bar design
   -----------------------------------------------------------------*/
@@ -276,22 +288,73 @@ a {
   justify-content: space-between;
 }
 
-.section-heading {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
-.section-description {
-  margin-left: 50px;
-  margin-right: 50px;
-}
-
 .main-section {
   width: 720px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background:  var(--color-light-1);
+}
+
+.section-heading {
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  align-self: flex-start;
+}
+
+.section-text {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.section-text a {
+  color: var(--color-dark-1);
+}
+
+.section-example {
+  position: relative;
+  align-items: center;
+}
+
+.section-example div {
+  margin-left: 70px;
+  margin-right: 70px;
+  border-width: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--color-dark-1);
+  font-size: 18px;
+  padding: 10px;
+}
+
+.example-question {
+  background-color: var(--color-light-1);
+  font-weight: bold;
+}
+
+.example-answer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  color: var(--color-light-1);
+  background-color: var(--color-dark-1);
+}
+
+.example-question:hover + .example-answer {
+  display: block;
+}
+
+.section-image {
+  max-width: 400px;
+  max-height: 400px;
+  margin: 20px;
+  border-width: 2px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: var(--color-dark-1);
+
 }
 
 .subpage-link-container {
