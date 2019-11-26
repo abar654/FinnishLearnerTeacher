@@ -1,3 +1,7 @@
+/**-----------------------------------------------------------------
+  * Colours and fonts for the whole page
+  -----------------------------------------------------------------*/
+
 :root {
   --color-light-1: #f6f6f6;
   --color-light-2: #d6e4f0;
@@ -13,10 +17,9 @@ body {
   color: var(--color-line);
 }
 
-a {
-  color: var(--color-light-1);
-  text-decoration: none;
-}
+/**-----------------------------------------------------------------
+  * Header and nav bar design
+  -----------------------------------------------------------------*/
 
 .menu-bar {
   display: flex;
@@ -63,6 +66,15 @@ a {
 .menu-button:hover {
   background: var(--color-dark-2-hover);
 }
+
+.menu-bar a {
+  color: var(--color-light-1);
+  text-decoration: none;
+}
+
+/**-----------------------------------------------------------------
+  * Homepage large Logo and Title Display Design
+  -----------------------------------------------------------------*/
 
 .large-logo-title-display {
   display: flex;
@@ -219,6 +231,10 @@ a {
   color: var(--color-line);
 }
 
+/**-----------------------------------------------------------------
+  * Homepage link display design
+  -----------------------------------------------------------------*/
+
 .links-display {
   display: flex;
   justify-content: space-evenly;
@@ -247,7 +263,9 @@ a {
   font-size: 24px;
 }
 
-/*Infopage CSS from here */
+/**-----------------------------------------------------------------
+  * Design for the info pages of the website
+  -----------------------------------------------------------------*/
 
 .info-page-layout {
   display: flex;
@@ -301,7 +319,11 @@ a {
   font-size: 10px;
 }
 
-/* Min screen width for regular view is 1210px */
+/**-----------------------------------------------------------------
+  * Media Queries to adjust layouts for different screen sizes
+  -----------------------------------------------------------------*/
+
+/* Tablet Mode: Min screen width for regular view is 1210px */
 @media (max-width: 1210px) {
 
   .menu-bar {
@@ -318,7 +340,7 @@ a {
 
 }
 
-/* Min screen width for thinner view is 720px */
+/* Phone Mode: Min screen width for tablet mode view is 720px */
 @media only screen and (max-width: 720px) {
 
   .menu-bar {
