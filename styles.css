@@ -9,6 +9,8 @@
   --color-dark-2: #163172;
   --color-dark-2-hover: #264182;
   --color-line: #17233a;
+  --color-success: #42956f;
+  --color-fail: #f44336;
   font-family: 'Kalam', Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -318,6 +320,10 @@ li {
   color: var(--color-dark-1);
 }
 
+ul.section-text {
+  align-self: flex-start;
+}
+
 .section-example {
   position: relative;
   align-items: center;
@@ -446,6 +452,139 @@ li {
   font-size: 10px;
   margin-bottom: 10px;
 }
+
+/**-----------------------------------------------------------------
+  * Design for the resource pages of the website
+  -----------------------------------------------------------------*/
+
+.res-type-container {
+  margin: 50px;
+  color: var(--color-line);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: var(--color-dark-1);
+  background: var(--color-light-2);
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "text image"
+    "example example";
+}
+
+.res-type-title {
+  grid-area: title;
+  padding: 2px;
+  padding-left: 10px;
+  font-size: 24px;
+  background: var(--color-dark-1);
+  color: var(--color-light-1);
+}
+
+.res-type-text {
+  margin: 20px;
+  grid-area: text;
+}
+
+.res-type-img {
+  width: 250px;
+  margin: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: var(--color-dark-1);
+  grid-area: image;
+}
+
+.res-ex-display {
+  margin: 20px;
+  grid-area: example;
+}
+
+.res-ex-container {
+  position: relative;
+  margin-top: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: var(--color-dark-1);
+  background: var(--color-dark-1);
+  display: grid;
+  grid-template-rows: 40px auto;
+  grid-template-areas:
+    "image title rating"
+    "image text level";
+  transition: all 250ms ease;
+}
+
+.res-ex-container:hover {
+transform: scale(1.05);
+}
+
+.res-ex-icon {
+  grid-area: image;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  align-self: center;
+}
+
+.res-ex-title {
+  grid-area: title;
+  padding-left: 10px;
+  font-size: 25px;
+  color: var(--color-light-1);
+}
+
+.res-ex-rating {
+  grid-area: rating;
+}
+
+.res-ex-text {
+  grid-area: text;
+  padding: 10px;
+  font-size: 12px;
+  color: var(--color-line);
+  background: var(--color-light-1);
+}
+
+.level-container {
+  display: flex;
+  grid-gap: 1px;
+  flex-direction: column;
+  grid-area: level;
+  font-size: 12px;
+}
+
+.level-container div {
+  flex-grow: 1;
+  text-align: center;
+  padding: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-light-1);
+}
+
+.level-green {
+  background: var(--color-success);
+}
+
+.level-red {
+  background: var(--color-fail);
+}
+
+.res-ex-price {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  left: 0px;
+  bottom: 0px;
+  background: gray;
+  opacity: 80%;
+}
+
 
 /**-----------------------------------------------------------------
   * Media Queries to adjust layouts for different screen sizes
