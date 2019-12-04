@@ -261,7 +261,9 @@ li {
 
 .links-display {
   display: flex;
-  justify-content: space-evenly;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  justify-content: space-around;
   margin-bottom: 80px;
 }
 
@@ -458,7 +460,10 @@ ul.section-text {
   -----------------------------------------------------------------*/
 
 .res-type-container {
-  margin: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   color: var(--color-line);
   border-style: solid;
   border-width: 2px;
@@ -537,6 +542,9 @@ transform: scale(1.05);
 }
 
 .res-ex-rating {
+  align-self: center;
+  justify-self: center;
+  height: 25px;
   grid-area: rating;
 }
 
@@ -581,8 +589,12 @@ transform: scale(1.05);
   font-weight: bold;
   left: 0px;
   bottom: 0px;
-  background: gray;
-  opacity: 80%;
+  background: var(--color-success);
+  opacity: 90%;
+}
+
+#price-paid {
+  background: var(--color-fail);
 }
 
 
@@ -657,6 +669,8 @@ transform: scale(1.05);
   .links-display {
     flex-direction: column;
     align-items: center;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .link-container {
