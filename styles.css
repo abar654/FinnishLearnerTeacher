@@ -711,6 +711,8 @@ transform: scale(1.05);
   }
 
   .res-type-container {
+    margin-left: 5px;
+    margin-right: 5px;
     grid-template-areas:
       "title"
       "image"
