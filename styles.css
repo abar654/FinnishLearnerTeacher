@@ -710,4 +710,25 @@ transform: scale(1.05);
     max-width: 80vw;
   }
 
+  .res-type-container {
+    grid-template-areas:
+      "title"
+      "image"
+      "text"
+      "example";
+  }
+
+  .res-ex-container {
+    grid-template-rows: 40px auto auto;
+    grid-template-areas:
+      "title rating"
+      "text text"
+      "image level";
+  }
+
+  .res-ex-icon {
+    justify-self: center;
+    align-self: center;
+  }
+
 }
